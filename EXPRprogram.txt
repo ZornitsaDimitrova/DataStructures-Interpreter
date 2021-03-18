@@ -1,0 +1,23 @@
+firstvar = 1
+read secondvar
+thirdvar = 3
+FIRSTFUN[par] = firstvar + 2*secondvar%par
+print firstvar
+print secondvar
+print thirdvar
+print FIRSTFUN[thirdvar]
+firstvar = 6
+print FIRSTFUN[thirdvar]
+FIRSTFUN[par] = 2*par
+SECONDFUN[par] = par + FIRSTFUN[par]
+THIRDFUN[par] = SECONDFUN[par] + SECONDFUN[FIRSTFUN[firstvar*7] + FIRSTFUN[SECONDFUN[(secondvar-1)*par] + FIRSTFUN[par]*FIRSTFUN[thirdvar]]] + 8*(secondvar-1) - par
+print THIRDFUN[thirdvar]
+fourthvar = 5
+G[par] = fourthvar + par
+H[h] = G[h] + G[h*G[fourthvar]]
+firstvar=6
+Z[y] = firstvar*G[firstvar]*(y + H[y])
+print Z[3]
+SECONDFUN[x] = x + fourthvar
+FIRSTFUN[x] = 2*x + thirdvar
+print FIRSTFUN[2]*SECONDFUN[4]
